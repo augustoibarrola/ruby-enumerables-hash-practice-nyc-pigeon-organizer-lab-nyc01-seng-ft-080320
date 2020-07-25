@@ -21,12 +21,14 @@ the following collected data on New York City pigeons in the form of a hash:
 
 ```ruby
 pigeon_data = {
+
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
     :grey => ["Theo", "Peter Jr.", "Ms. K"],
     :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
     :brown => ["Queenie", "Alex"]
   },
+
   :gender => {
     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
     :female => ["Queenie", "Ms. K"]
@@ -93,7 +95,7 @@ pigeon_list = {
 ```
 
 **Note**: Comparing the original hash with the expected output above, you will see
-that some of the original keys are **symbols**, like `:male` and `:female`, but in the 
+that some of the original keys are **symbols**, like `:male` and `:female`, but in the
 expected output, these have been converted into **strings**.
 
 Write your code in the provided `nyc_pigeon_organizer` method. The tests in this
