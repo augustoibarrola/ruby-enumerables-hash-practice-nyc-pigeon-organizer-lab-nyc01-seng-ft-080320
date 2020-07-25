@@ -5,13 +5,13 @@ final_results = data.each_with_object({}) do |(key, value) fa |
 
   value.each do |inner_keys, names|
     names.each do |name|
-      if !final_array[name]
-        final_array[name] = {}
+      if !fa[name]
+        fa[name] = {}
       end
-      if !final_array[name][key]
-        !final_array[name][key] = []
+      if !fa[name][key]
+        !fa[name][key] = []
       end
-      final_array[name][key].push(inner_keys.to_s)
+      fa[name][key].push(inner_keys.to_s)
     end
   end
   end
