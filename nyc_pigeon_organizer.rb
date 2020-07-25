@@ -8,10 +8,11 @@ final_results = data.each_with_object({}) do |key, value| final_array|
       end
       if !final_array[name][key]
         !final_array[name][key] = []
+        binding.pry
+
       end
       final_array[name][key].push(inner_keys.to_s)
     end
   end
   end
-  binding.pry
 end
