@@ -1,6 +1,6 @@
 require 'pry'
 def nyc_pigeon_organizer(data)
-final_results = data.each_with_object({}) do |key, value| fa
+final_results = data.each_with_object({}) do | (key, value) fa|
   value.each do |inner_keys, names|
     names.each do |name|
       if !fa[name]
